@@ -1,0 +1,52 @@
+#web {
+    color:white;
+    font-size:10vw;
+    position: absolute;
+    top: 2vw;
+    left: 16vw;
+}
+
+#design {
+    color:white;
+    font-size:10vw;
+    position: absolute;
+    top: 10vw;
+    left: 16vw;
+}
+
+@keyframes move {
+    0% {
+        left: 0%;
+    }
+    50% {
+        left: 25%;
+    }
+
+    100% {
+        left: 5%;
+    }
+}
+
+#web {
+    position: absolute;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+#design {
+    position: absolute;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.btn {
+    background-color:#e6b3ff;
+}
+
+@media screen and (max-width:600px) {
+    #web, #design {
+        display:none;
+    }
+}
